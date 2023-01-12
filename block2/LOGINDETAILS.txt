@@ -1,0 +1,10 @@
+ADMIN USER
+----------
+username: test@test.com
+password: test
+
+DEFAULT USER
+------------
+username: d.thorpe@gmail.com
+password: 123
+Or register your own

@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<!-- Admin for Employees-->
+<!-- version 1 2021-08-14 -->
+<html>
+    <head>  
+        <meta charset="utf-8">
+	    <title>Employees</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	   	<!-- The site uses Bootstrap v5 Framework-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+	    <!-- overall container for page -->
+	    <div class="container">
+
+            <!-- header row -->
+            <div id="header" class="card text-center">
+                <h1 class="card-title">CMP306 Dynamic Web Development 2 - 2020-21</h1>
+                <h2 class="card-title">Dr Geoffrey Lund - g510572</h2>
+                <h2 class="card-title">Employee Database - Admin</h2>
+            </div><!-- Header  row -->
+
+ 		<div class="row">
+			
+			<!-- Display All -->
+            <div class="col-sm-4">
+            	<div class="card">
+            		<div class="card-header">Display All Employees</div>
+            		<div class="card-body">
+						<form role="form" method="GET" action="../view/displayall.php">
+  							<button class="btn btn-primary" type="submit">Display All</button>
+						</form>
+					</div><!-- card body -->
+            	</div><!-- card -->
+            </div> <!-- column -->
+            
+            <!-- Display An Employee -->
+            <div class="col-sm-4">
+            	<div class="card">
+            		<div class="card-header">Display An Employee</div>
+            		<div class="card-body">
+						<form role="form" method="GET" action="../controller/displayrec.php">
+							<div class="form-group">
+    							<label>Employee Number :</label>
+    							<input type="text" class="form-control" name="eno">
+  							</div>
+  							<button class="btn btn-primary" type="submit">Submit</button>
+						</form>
+					</div><!-- card body -->
+            	</div><!-- card -->
+            </div> <!-- column -->
+            
+            <!-- Insert Data for Employee -->
+            <div class="col-sm-4">
+            	<div class="card">
+            		<div class="card-header">Create An Employee</div>
+            		<div class="card-body">
+						<form role="form" method="GET" action="../view/create.php">
+                            <button class="btn btn-primary" type="submit">Create Employee</button>
+                      </form>
+					</div><!-- card body -->
+            	</div><!-- card -->
+            </div> <!-- column -->
+            
+            
+            <!-- Update Data for Employee -->
+            <div class="col-sm-4">
+            	<div class="card">
+            		<div class="card-header">Update An Employee</div>
+            		<div class="card-body">
+						<form role="form" method="GET" action="../view/update.php">
+							<div class="form-group">
+    							<label>Employee Number :</label>
+    							<input type="text" class="form-control" name="eno">
+  							</div>
+  							<button class="btn btn-primary" type="submit">Submit</button>
+						</form>
+					</div><!-- card body -->
+            	</div><!-- card -->
+            </div> <!-- column -->
+            
+            <!-- Delete An Employee -->
+           <div class="col-sm-4">
+            	<div class="card">
+            		<div class="card-header">Delete An Employee</div>
+            		<div class="card-body">
+						<form role="form" method="GET" action="../controller/deleterec.php">
+							<div class="form-group">
+    							<label>Employee Number :</label>
+    							<input type="text" class="form-control" name="eno">
+  							</div>
+  							<button class="btn btn-primary" type="submit">Submit</button>
+						</form>
+					</div><!-- card body -->
+            	</div><!-- card -->
+            </div> <!-- column -->
+            	
+		</div><!-- row -->
+			         
+        </div><!-- container -->
+    </body>
+</html>
+</body>
+</html>
